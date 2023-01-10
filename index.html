@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="backgroundstyle.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-apple" aria-hidden="true"></i></span>
+                        <span class="title"><h2>Brand Name</h2></span>
+                    </a>
+                  <li>
+                 <a>     
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+                        <span class="title"><h2>My Dashboard</h2></span>
+                    </a>
+                 </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-users" aria-hidden="true"></i></span>
+                        <span class="title"><h2>Clients</h2></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-question-circle" aria-hidden="true"></i></span>
+                        <span class="title"><h2>Help</h2></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-cog" aria-hidden="true"></i></span>
+                        <span class="title"><h2>Settings</h2></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                        <span class="title"><h2>Password</h2></span>
+                    </a>
+                  </li> 
+                  <li>
+                        <a href="#">
+                            <span class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
+                            <span class="title"><h2>Sign Out</h2></span>
+                        </a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="main">
+                    <div class="topbar">
+                        <div class="toggle" onclick="toggleMenu();"></div> 
+                        <div class="search">
+                            <label>
+                              <input type="text" placeholder=" Search here">
+                              <i class="fa fa-search" aria-hidden="true"></i>
+                            </label>
+                            <div class="user">
+                              <img src="user.jpg">
+                            </div>
+                         </div>
+
+                         <div class="cardBox">
+                             <div class="card">
+                               <div>
+                                <div class="numbers">1820</div>
+                                <div class="cardName">Daily Views</div>
+                               </div>
+                               <div class="iconBox">
+                                   <i class="fa fa-eye" aria-hidden="true"></i>
+                               </div>
+                            </div>
+                                <div class="card">
+                                  <div>
+                                   <div class="numbers">86</div>
+                                   <div class="cardName">Sales</div>
+                                  </div>
+                                  <div class="iconBox">
+                                      <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                  </div>
+                                    <div class="card">
+                                      <div>
+                                        <div class="numbers">207</div>
+                                        <div class="cardName">Comment</div>
+                                    </div>
+                                      <div class="iconBox">
+                                          <i class="fa fa-eye" aria-hidden="true"></i>
+                                    </div>   
+                                      <div class="card">
+                                         <div>
+                                           <div class="numbers">Ksh 1.275m</div>
+                                           <div class="cardName">Earning</div>
+                                        </div>
+                                        <div class="iconBox">
+                                            <i class="fa fa-Ksh" aria-hidden="true"></i>
+                                        </div>    
+                                  </div>
+                               </div>
+
+                               <div class="details">
+                                   <div class="recentOrder">
+                                       <div class="cardHeader">
+                                           <a href="#" class="btn">View All</a>
+                                       </div>
+                                       <table>
+                                           <thead>
+                                               <tr>
+                                                   <td>Name</td>
+                                                   <td>Price</td>
+                                                   <td>Payment</td>
+                                                   <td>Status</td>
+                                               </tr>
+                                           </thead>
+                                           <tbody>
+                                               <tr>
+                                                   <td>Ankara Dresses</td>
+                                                   <td>Ksh 2800</td>
+                                                   <td>Paid</td>
+                                                   <td><span class="status delivered">Delivered</span></td>
+                                               </tr>
+                                               <tr>
+                                                <td>Hoodies</td>
+                                                <td>Ksh 1200</td>
+                                                <td>Paid</td>
+                                                <td><span class="status pending">Pending</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sweatpants</td>
+                                                <td>Ksh 800</td>
+                                                <td>Paid</td>
+                                                <td><span class="status return">Return</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Skirts</td>
+                                                <td>Ksh 1750</td>
+                                                <td>Paid</td>
+                                                <td><span class="status pending">Pending</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sneakers</td>
+                                                <td>Ksh 5800</td>
+                                                <td>Due</td>
+                                                <td><span class="status in progress">In progress</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Trousers</td>
+                                                <td>Ksh 3200</td>
+                                                <td>Paid</td>
+                                                <td><span class="status delivered">Delivered</span></td>
+                                            </tr>
+                                           </tbody>
+                                       </table>
+                                   </div>
+                               </div>
+
+                    </div>
+
+                    <script>
+                        function toggleMenu(){
+                            let toggle = document.querySelector('.toggle');
+                            let navigation = document.querySelector('.navigation');
+                            let main = document.querySelector('main');
+                            toggle.classList.toggle('active');
+                            navigation.classList.toggle('active');
+                            main.classList.toggle('active');
+                        }
+                    </script>
+    
+</body>
+</html>
